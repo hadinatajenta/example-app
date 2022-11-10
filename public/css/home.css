@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+/* body */
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+/* list, link dan tombol login */
+li a , button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #edf0f1;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content :flex-end;
+    align-items: center;
+    background-color: #24252a;
+    padding-right: 10px;
+}
+
+/* navigasi */ 
+.navigasi {
+    height: 50px;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10%;
+    background-color: #24252a;
+}
+/* logo */
+.logo{
+    height: 60px;
+    width: 200px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: #00C6BF;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: #0088a9;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Kiri kanan */
+.column.side {
+    width: 20%;
+    
+}
+
+/* Konten Tengah */
+.column.middle {
+    width: 60%; 
+    position: relative;
+}
+    /** untuk Berita Hari ini */
+    /*ini untuk Box Berita Hari ini */
+    .hari-ini{
+        position: relative;
+        color: white;    
+        margin-bottom: 10px;    
+    }
+    /*gambar berita hari ini */
+    .hari-ini img{
+        width: 100%;
+    
+    }
+    /*text berita hari ini */
+    .hari-ini p{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        width: 200px;
+        font-weight: 800;
+    }
+
+    /**Berita Terbaru */
+    /*berita terbaru box */
+    .main-content{
+        box-shadow: 4px 4px 69px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+        /*gambar untuk setiap berita */
+        .gambar-berita{
+            width: 20%;
+            height: auto;
+        }
+            .gambar-berita a img{
+                height: auto;
+                width: 100%;
+                margin: 10px;
+                border-radius: 20px;
+            }
+
+        /*berita= judul, kategori, waktu */
+        .berita{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            width: 75%;
+            margin: 20px;
+            height: auto;
+        }
+            .berita div{
+                width: 100%;
+            }
+                .berita div h3 a{
+                    text-decoration: none;
+                    color: #24252a;
+                }
+
+            .kategori-waktu{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .kategori{
+                padding-right: 10px;
+                text-decoration: none;
+            }
+         /**Berita Rekomendasi */
+         .rekomendasi h3{
+            margin: 0;
+         }
+            .box-rekomendasi{
+                    display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+                        grid-gap: 10px;
+                        align-items: stretch;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+            }
+            .box-rekomendasi article{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 10px;
+                overflow: hidden;
+                border-radius: 20px;
+                box-shadow: 4px 4px 69px rgba(0, 0, 0, 0.2);
+            }
+                    .box-rekomendasi article a{
+                        width: 100%;
+                        height: auto;
+                    }
+                        .box-rekomendasi article a img{
+                            width: 80%;
+                            height: auto;
+                            margin: 20px;
+                            border-radius: 20px;
+                        }
+                    .box-rekomendasi article h3{
+                        width: 80%;
+                    }
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Fake image */
+.fakeimg {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.fakeimg img{
+    border-radius: 20px;
+}
+
+/* Untuk Box Kiri kanan */
+.card {
+    background-color: white;
+    padding: 20px;
+   
+}   
+.card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.card h1,p,h5 {
+    margin-bottom: 20px;
+}
+
+/*main konten halaman baca */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/*untuk iklan bagian atas */
+.iklan{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+    .iklan img{
+        width: 70%;
+        display: flex;
+    }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column.side,
+    .column.middle {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+footer {
+    background-color: #24252a;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}

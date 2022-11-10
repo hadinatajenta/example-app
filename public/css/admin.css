@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    color: #444;
+}
+
+h3 {
+    color: #999;
+}
+
+.btn {
+    background: #f05462;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    color: #f05462;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #f05462;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+table {
+    padding: 10px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+.side-menu {
+    position: fixed;
+    background: #24252a;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.brand-name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-name img{
+    width: 70%;
+}
+
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-menu li {
+    font-size: 20px;
+    padding: 10px 40px;
+    color: #F7F9FF;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    font-family: 'Montserrat',sans-serif;
+}
+.side-menu li a i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.side-menu li:hover {
+    
+    color: #00C6BF;
+}
+.side-menu li a:hover{
+    color: #00C6BF;
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: #24252a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+.container .header .nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.container .header .nav .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.container .header .nav .user p{
+    color: white;
+    margin-right: 10px;
+}
+
+.container .header .nav .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.container .header .nav .user .img-case img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+    
+}
+
+
+.container .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.container .content .container-laporan{
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.content .container-laporan .isi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #558EF8;
+    color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+}
+.content .container-laporan .isi-laporan .chart{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+.content .container-laporan .isi-laporan .chart #myChart{
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.container .content .cards .laporan{
+    background-color: white;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 69px rgba(0, 0, 0, 0.25);
+}
+.laporan i{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container .content .cards h3{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #24252a;
+}
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+
+    .side-menu {
+        align-items: center;
+    }
+
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .side-menu li:hover {
+        background: #f05462;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+
+    .container .content .cards {
+        justify-content: center;
+    }
+
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table td:nth-child(2) {
+        display: none;
+    }
+}
+
+/**aktif saat digunakan */
+.aktif{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color:#00C6BF ;
+    border-radius: 10px;
+}
+
+/**DROPDOWN */
+#dropbtn {
+    
+ 
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#dropbtn:hover,
+.dropbtn:focus {
+    color:  #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.show {
+    display: block;
+}
+
+/**MAIN KONTENT */
+ /*berita terbaru box */
+.main-content {
+    box-shadow: 4px 4px 69px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+    height: 100px;
+    padding: 0px 0px 8px;
+    margin: 5px;
+}
+.main-content .nama-author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+/*gambar untuk setiap berita */
+.gambar-berita {
+    width: 200px;
+    height: 100px;
+}
+
+.gambar-berita a img {
+    height: 100px;
+    border-radius: 20px;
+    width: 180px;
+}
+
+/*berita= judul, kategori, waktu */
+.berita {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 75%;
+}
+
+.berita div {
+    width: 100%;
+}
+
+.berita div h3 a {
+    text-decoration: none;
+    color: #24252a;
+}
+
+.kategori-waktu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.kategori {
+    padding-right: 10px;
+    text-decoration: none;
+}
+ .author{
+    align-self: center;
+ }
+
+ /**TABEL HALAMAN LAPORAN BERITA */
+.table{
+    padding: 20px;
+}
+ .myTable{
+    font-family: 'Montserrat';
+    border-collapse: collapse;
+    width: 100%;
+ 
+ }
+ .myTable td, .myTable th{
+    border: 1px solid #ddd;
+    padding: 8px;
+ }
+ .myTable tr:nth-child(even) {
+     background-color: #f2f2f2;
+ }
+
+ .myTable tr:hover {
+     background-color: #ddd;
+ }
+ .myTable th{
+    padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #368EFF;
+        color: white;
+ }
+ /**Untuk Head halaman invite author */
+ .head-invite{
+    display: flex;
+    justify-content: space-between;
+ }
+ .head-invite .penulis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .head-invite .add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00C6BF;
+    width: 200px;
+    margin-right: 20px;
+    font-size: larger;
+    font-weight: 700;
+    height: 40px;
+    border-radius: 10px;
+ }
+
+ /**Table untuk halaman invite author */
+
+ #myTable{
+    border-collapse: collapse;
+    width: 100%;
+ }
+ #myTable td,
+ #myTable th {
+     padding: 8px;
+ }
+
+ #myTable tr:hover {
+     background-color: #ddd;
+ }
+
+ #myTable th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #368EFF;
+     color: white;
+ }
+
+ /**Untuk form add author */
+ form {
+    margin: 10px;
+ }
+ form label{
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+ }
+
+ input{
+    width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: flex;
+        
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+ }
+ input[type=submit] {
+    justify-content: center;
+     width: 30%;
+     background-color: #24AEB7;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ /**TABLE & HALAMAN ANALITIK IKLAN */
+  #TableSaya {
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  #TableSaya td,
+  #TableSaya th {
+      padding: 8px;
+  }
+
+  #TableSaya tr:hover {
+      background-color: #ddd;
+  }
+
+  #TableSaya th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #368EFF;
+      color: white;
+
+  }
+.tambah{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.tambah .add{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00C6BF;
+        width: 200px;
+        margin-right: 20px;
+        font-size: larger;
+        font-weight: 700;
+        height: 40px;
+        border-radius: 10px;
+
+}
+/**TAMBAH IKLAN */
+.tambah-iklan{
+
+}

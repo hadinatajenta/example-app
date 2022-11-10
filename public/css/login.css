@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(116.82deg, rgba(0, 115, 217, 0.65) 18.46%, #646AE3 48.44%, rgba(0, 60, 125, 0.85) 77.37%);
+}
+/* container */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container p{
+    width: 80%;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+p{
+    font-size: small;
+    margin-bottom: 10px;
+}
+form a{
+    text-decoration: none;
+    color:#385AD4 ;
+    font-size: 12px;
+}
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    width: 100%;
+    background: linear-gradient(90deg, #57D1F8 0%, #385AD5 100%);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #45a049;
+}
